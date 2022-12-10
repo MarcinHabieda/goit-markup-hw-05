@@ -79,6 +79,12 @@ body {
   line-height: 1.19;
   font-family: 'Raleway';
   width: 145px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-header:hover {
@@ -96,6 +102,9 @@ body {
   font-size: 26px;
   line-height: 1.19;
   font-family: 'Raleway';
+  transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-container {
@@ -123,6 +132,9 @@ body {
   font-size: 14px;
   line-height: 1.14;
   color: var(--main-color);
+  transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation:hover {
@@ -140,6 +152,9 @@ body {
   text-decoration: none;
   color: var(--secondary-text-color);
   fill: var(--secondary-text-color);
+  transition-property: color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-header:hover {
@@ -159,6 +174,9 @@ body {
   text-decoration: none;
   color: var(--contact-footer-color);
   margin-top: 9px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-footer:hover {
@@ -213,6 +231,9 @@ body {
   margin: 0 auto;
   margin-top: 30px;
   padding: 10px 42px;
+  transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .title-button:hover {
@@ -260,10 +281,34 @@ body {
 
 .descryption-photo-item {
   width: 370px;
+  height: 294px;
+  position: relative;
+}
+
+.photo-item-tittle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .descryption-photo-list > .descryption-photo-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.photo-item {
+  width: 370px;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding-top: 27px;
+  z-index: 1;
 }
 
 .social-media-team-list {
@@ -279,6 +324,10 @@ body {
   width: 44px;
   height: 44px;
   fill: var(--icons-color);
+  border-radius: 50%;
+  transition-property: background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-media-team-list > li:hover {
@@ -376,6 +425,9 @@ body {
   background-color: var(--secondary-background-color);
   border-radius: 4px;
   padding: 6px 22px;
+  transition-property: color, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .category-browser-list {
@@ -389,6 +441,12 @@ body {
   margin-top: 50px;
   gap: 30px;
   width: 1170;
+}
+
+.category-list > li {
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .category-list > li:hover {
@@ -529,6 +587,9 @@ h2 {
   display: flex;
   gap: 30px;
   margin-top: 50px;
+  transition-property: fill, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-list > li:hover {
@@ -604,6 +665,9 @@ h2 {
   fill: var(--secondary-color);
   background-color: var(--icons-background-footer);
   border-radius: 50%;
+  transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-media-team-list-footer > li:hover {
