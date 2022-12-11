@@ -46,7 +46,7 @@
       <section class="welcome-section section">
         <div class="container title-container">
           <h1 class="title">EFEKTYWNE ROZWIĄZANIA<br />DLA WASZEGO BIZNESU</h1>
-          <button class="title-button" type="button">Zamów usługe</button>
+          <button class="title-button" type="button" data-modal-open>Zamów usługe</button>
         </div>
       </section>
       <section class="section">
@@ -343,5 +343,13 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>X</button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
