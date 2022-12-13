@@ -813,11 +813,14 @@ h2 {
   }
 }
 
-.modal {
+.backdrop.is-hidden .modal {
+  animation-play-state: paused;
+}
+
+.backdrop:hover .modal {
   animation-name: changesize;
   animation-duration: 2s;
   animation-timing-function: linear;
-  animation-iteration-count: infinite;
 }
 
 .navigation-index::after {
