@@ -794,33 +794,14 @@ h2 {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   width: 528px;
   min-height: 581px;
   background-color: var(--secondary-color);
   z-index: 2;
-}
-
-@keyframes changesize {
-  0% {
-    transform: translate(-50%, -50%) scale(0.5);
-  }
-  50% {
-    transform: translate(-50%, -50%) scale(0.75);
-  }
-  100% {
-    transform: translate(-50%, -50%) scale(1);
-  }
-}
-
-.backdrop.is-hidden .modal {
-  animation-play-state: paused;
-}
-
-.backdrop:hover .modal {
-  animation-name: changesize;
-  animation-duration: 2s;
-  animation-timing-function: linear;
+  transform: translate(-50%, -50%) scale(1);
+  transition-property: transform;
+  transition-duration: 1s;
+  transition-timing-function: ease;
 }
 
 .navigation-index::after {
@@ -849,4 +830,8 @@ h2 {
   display: block;
   position: absolute;
   bottom: -28px;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.4);
 }
